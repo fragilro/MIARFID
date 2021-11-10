@@ -1,0 +1,12 @@
+# Created by Octave 5.2.0, Wed Sep 22 11:54:07 2021 CEST <fragilro@alumno.upv.es@ldsic-vdi15.upvnet.upv.es>
+# name: w
+# type: matrix
+# rows: 5
+# columns: 3
+ -20 20 -190
+ -246 -316 -477
+ 60 -174 -381
+ -589 -175 50
+ -227 -209 203
+
+
