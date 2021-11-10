@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto GPC</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600" rel="stylesheet">
+  <style>
+    * {font-family: 'Montserrat', sans-serif; font-weight:600}
+    body{ background-color: grey; margin:0; overflow:hidden; position: relative }
+    #labels{position: absolute;left: 0;top: 0;padding:30px; color:rgb(255,204,0)}
+    #labels2{color:rgb(255,204,0)}
+    #jugar{display:none;}
+    #centered {color:white;padding:50px;padding-bottom:10px; border-radius:10px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%); text-align:center; background-color:rgba(0,0,0,0.5)}
+    #centered2 {color:white;padding:50px; border-radius:10px;position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%); text-align:center; background-color:rgba(0,0,0,0.5); visibility:hidden;}
+    .hover:hover{color:rgb(255,204,0); cursor:pointer}
+  </style>
+</head>
+
+<body>
+  <div id="container"></div>
+  <div><p id="labels"></p></div>
+  <div id="centered">
+    <h1>¡Bienvenido a mi juego!</h1>
+    <p>En este juego empezarás en una sala en la que, como podrás ver, hay tres puertas. Tras cada una de ellas, hay un juguete que tratará de llegar a tí, y debes aguantar el máximo de tiempo posible hasta que cualquiera de ellos llegue al final de su habitación.</p>
+    <p>Una vez comience el juego, tras unos segundos empezará a avanzar uno de los juguetes, esto se indicará mediante una luz roja sobre la puerta de la habitación en la que está el juguete que está avanzando.</p>
+    <p>Una vez abras la puerta, haciendo click cerca de ella, el juguete dejará de avanzar y se apagará esa luz. Pero al poco tiempo, ¡comenzará a avanzar otro!</p>
+    <p>En el panel superior derecho podrás salir del juego (volver a este panel), reiniciar la partida, o modificar tanto la velocidad a la que avanzan los juguetes como la intensidad de la luz ambiente.</p>
+    <p>¡Aguanta todo lo que puedas!</p>
+    <h2 id="jugar" class="hover" onclick="comenzarJuego()">Iniciar</h2>
+    <h2 id="cargando">Cargando...</h2>
+    <div style="text-align:left; font-size:8px; font-weight:100;">This work is based on "Disney Infinity Woody" (https://sketchfab.com/3d-models/disney-infinity-woody-15be6200d75d46119482b2ce0d3c1d61) by Neut2000 (https://sketchfab.com/Neut2000) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)<br>
+    This work is based on "Pingu" (https://sketchfab.com/3d-models/pingu-34d6e003b6654f428855d3c1c79e7f67) by Kefla (https://sketchfab.com/Kefla) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+    </div>
+  </div>
+  <div id="centered2">
+    <h1>¡Se acabó!</h1>
+    <h1 id="labels2">¡Aguanta todo lo que puedas!</h1>
+    <h1 class="hover" onclick="comenzarJuego()">Jugar otra vez</h1>
+  </div>
+  <!-- Librerías auxiliares -->
+  <script src="lib/three.min_r96.js"></script>
+  <script src="lib/OrbitControls.js"></script>
+  <script src="lib/dat.gui.min.js"></script>
+  <script src="lib/stats.min.js"></script>
+  <script src="lib/GLTFLoader.js"></script>
+  <script src="lib/tween_18.4.2.js"></script>
+  <!-- <script src="lib/Coordinates.js"></script>
+  <script src="lib/cannon_062.js"></script>
+  <script src="lib/threex.Keyboardstate.js"></script> -->
+  <script src="lib/FirstPersonControls.js"></script>
+  <!-- Aquí mi script -->
+  <script src="proyecto.js">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Pingu
+* source:	https://sketchfab.com/3d-models/pingu-34d6e003b6654f428855d3c1c79e7f67
+* author:	Kefla (https://sketchfab.com/Kefla)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Pingu" (https://sketchfab.com/3d-models/pingu-34d6e003b6654f428855d3c1c79e7f67) by Kefla (https://sketchfab.com/Kefla) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
